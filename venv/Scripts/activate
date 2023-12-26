@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Dev_Progs\irctc_project_pytest\venv"
+VIRTUAL_ENV="D:\Dev_Progs\cyanconnode_api_project\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
