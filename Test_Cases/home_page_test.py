@@ -17,7 +17,7 @@ import pytest
 
 
 def test_homepage():
-    driver = webdriver.Chrome(service=Service(executable_path="C:/work/chromedriver.exe"))
+    driver = webdriver.Chrome(service=Service(executable_path="chromedriver.exe"))
     driver.get("https://www.irctc.co.in/")
     driver.maximize_window()
     time.sleep(5)
