@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.select import Select
 import pytest
-from pytesseract import pytesseract
+# from pytesseract import pytesseract
 import custom_keywords.keywords_test
 import pandas as pd
 import custom_keywords.keywords_test as keywords_test
