@@ -4,7 +4,6 @@ import chromedriver_autoinstaller
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-
 def test_homepage():
     opt = webdriver.ChromeOptions()
     opt.add_argument("--start-maximized")
@@ -26,3 +25,5 @@ def test_homepage():
     # driver.find_element(By.XPATH,"//span[contains(text(),'-- Stations --')]/parent::li/following-sibling::li | (//div/ul[@id='pr_id_2_list']/li/span)[1]").click()
     # driver.find_element(By.XPATH,"(//input[contains(@class,'ui-inputtext')])[1]").send_keys(keywords_test.get_to_city())
     # driver.find_element(By.XPATH,"//span[contains(text(),'-- Stations --')]/parent::li/following-sibling::li").click()
+
+test_homepage()
