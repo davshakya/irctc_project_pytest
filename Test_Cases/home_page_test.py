@@ -1,17 +1,24 @@
 import time
 from selenium import webdriver
-import chromedriver_autoinstaller
-from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+# from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+# from webdriver_manager.chrome import ChromeDriverManager
+# from selenium.webdriver.support.select import Select
+import pytest
+
+
+# from pytesseract import pytesseract
+# import custom_keywords.keywords_test
+# import pandas as pd
+# import custom_keywords.keywords_test as keywords_test
+# import resources_data.xpath_data as xpath_data
 
 def test_homepage():
-    opt = webdriver.ChromeOptions()
-    opt.add_argument("--start-maximized")
-    chromedriver_autoinstaller.install()
-    driver = webdriver.Chrome(options=opt)
-    # driver = webdriver.Chrome(service=Service(executable_path="chromedriver.exe"))
+    driver = webdriver.Chrome(service=Service(executable_path="chromedriver.exe"))
     driver.get("https://www.irctc.co.in/")
-    # driver.maximize_window()
+    driver.maximize_window()
     time.sleep(5)
     driver.find_element(By.XPATH, "//a[contains(text(),'LOGIN')]").click()
     driver.find_element(By.XPATH, "//input[@placeholder='User Name']").send_keys('davshakya')
